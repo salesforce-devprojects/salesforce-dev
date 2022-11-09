@@ -1,0 +1,24 @@
+<template>
+
+    
+    <lightning-card title="Getting account details">
+        <template for:each={acclist} for:item="acc">
+      <lightning-card key={acc.Id}>
+        <p>{acc.Name}</p>
+      </lightning-card>
+
+        </template>
+
+        <lightning-button label="Click" variant="brand" onclick={getacclist}></lightning-button>
+     <template if:true={loading}>
+        <div>
+
+        <lightning-spinner alternative-text="Loading"></lightning-spinner>
+
+        </div>
+     </template>
+
+    </lightning-card>
+
+    
+</template>
