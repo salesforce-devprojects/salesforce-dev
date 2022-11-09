@@ -1,0 +1,42 @@
+<apex:page standardController="Lead" extensions="ExtensionPr">
+    <apex:form >
+       <apex:pageBlock title="Lead Creation">
+            <apex:pageBlockSection title="For Creating a Lead" columns="1">
+                 <apex:inputField value="{!Lead.FirstName}"/>
+                 <apex:inputField value="{!Lead.LastName}"/>
+                 <apex:inputField value="{!Lead.Company}"/>
+                 <apex:inputField value="{!Lead.Status}"/>
+                 <apex:inputField value="{!Lead.Rating}"/>
+                 <apex:inputField value="{!Lead.Description}"/>
+                
+                <apex:commandButton value="ClickheretoSave" action="{!save}"/>
+           
+           
+           </apex:pageBlockSection>
+           
+           
+           
+           
+                         <apex:pageBlockSection title="Caluclating Number" columns="1"> 
+                             <apex:inputText label="Enter First Number" value="{!Num1}"/>
+                             <apex:inputText label="Enter Second Number" value="{!Num2}"/>
+                             <apex:inputText label="Enter Third Number" value="{!Num3}"/>
+                             
+                             <apex:selectRadio label="Select your Choice" value="{!Ch}">
+                                 <apex:selectOption itemLabel="Greater" itemValue="GR"/>
+                                 <apex:selectOption itemLabel="Smaller" itemValue="SM"/>
+                             </apex:selectRadio>
+                             
+                             <apex:commandButton value="Click here to Caluclate" action="{!Mainmethod}"/>
+                             <apex:outputText label="The Result is " value="{!Result}"/>
+                             
+           
+           
+           </apex:pageBlockSection>
+        </apex:pageBlock>
+    
+    
+    
+    
+    </apex:form>
+</apex:page>

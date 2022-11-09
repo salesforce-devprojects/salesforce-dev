@@ -1,0 +1,45 @@
+<aura:component >
+    
+  <lightning:layout multipleRows = "true">
+    <lightning:layoutItem size="7">
+        <div class = "mybox">
+        
+        hello
+        
+        </div>
+      
+      
+      </lightning:layoutItem>
+    <lightning:layoutItem size="5">
+        <div class = "mybox">
+        
+        hello
+        
+        </div>
+      
+      
+      </lightning:layoutItem>
+      <lightning:layoutItem size="4">
+        <div class = "mybox2">
+        
+        hello
+        
+        </div>
+      
+      
+      </lightning:layoutItem>
+      
+       <lightning:layoutItem size="8">
+        <div class = "mybox2">
+        
+        hello
+        
+        </div>
+      
+      
+      </lightning:layoutItem>
+    
+    
+    </lightning:layout>
+	
+</aura:component>

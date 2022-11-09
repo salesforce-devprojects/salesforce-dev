@@ -1,0 +1,24 @@
+<aura:component >
+    <lightning:button label ="Follow" iconName ="utility:add"/>
+    
+    
+   <lightning:buttonGroup>
+       
+     <lightning:button label ="New Case"/>
+     <lightning:button label ="New Note"/>
+      <lightning:button label ="Submit for Apporval"/>
+    
+    <lightning:buttonMenu alternativeText ="menu" >
+     
+        <lightning:menuItem label ="Clone" value = "cl"/>
+        <lightning:menuItem label ="Edit" value = "ed"/>
+        <lightning:menuItem label ="Delete" value = "Dl"/>
+        <lightning:menuItem label ="Changeowner" value = "ch"/>
+        <lightning:menuItem label ="New Data" value = "Nd"/>
+    
+    </lightning:buttonMenu>
+    
+    </lightning:buttonGroup>
+
+	
+</aura:component>

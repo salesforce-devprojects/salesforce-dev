@@ -1,0 +1,26 @@
+<aura:component controller = "FirstMethodPassParama" >
+    <aura:attribute name = "Accnm" type = "String"/>
+    <aura:attribute name = "Phon" type = "String"/>
+    <aura:attribute name = "In" type = "String"/>
+    <aura:attribute name = "ALL" type = "Integer"/>
+    
+    <lightning:card title = "Account information table" iconName = "utility:add">
+    
+        <lightning:input label = "Enter Account Name" value = "{!v.Accnm}"/>
+       <lightning:input label = "Enter Account Phone" value = "{!v.Phon}"/>
+    <lightning:input label = "Enter Account Industry" value = "{!v.In}"/>
+    <lightning:input label = "Enter Account AnnualRevenue" value = "{!v.ALL}"/>
+        
+        <aura:set attribute = "actions">
+        
+            <lightning:button label = "Clickhere to save" onclick = "{!c.Clc}"/>
+            <lightning:button label = "Clear"             onclick = "{!c.cl}"/>
+        
+        
+        </aura:set>
+    
+    
+    
+    </lightning:card>
+	
+</aura:component>

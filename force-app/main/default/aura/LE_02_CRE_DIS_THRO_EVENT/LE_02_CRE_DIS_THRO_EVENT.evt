@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="This is 2nd event" >
+
+    <aura:attribute name = "eacc" type = "Account"/>
+</aura:event>

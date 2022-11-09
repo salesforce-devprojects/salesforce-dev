@@ -1,0 +1,16 @@
+<aura:component controller = 'Aura_Apex' >
+    <b> This is my first Lighthining Page</b>
+      This will contains 
+    (a).Lighthing component<p/>
+    (b).Ligtnining controller<p/>
+    (c).Ligtnining helper<p/>
+    (d).Ligtnining style<p/>
+    (e).Lightnining Doc<p/>
+    (f).Ligtnining Redender<p/>
+    (h).Lightnining Design<p/>
+    (i).Ligtnining SVG<p/>
+    
+    <b>Click here to Know more</b><p/>
+    <lightning:button  variant = "brand" label ="Submit" iconname = "utlity:enter" onclick = "{!c.Controller}"/>
+	
+</aura:component>

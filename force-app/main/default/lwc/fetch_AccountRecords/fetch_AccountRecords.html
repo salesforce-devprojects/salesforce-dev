@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Account Details with Industry as Banking">
+
+  <lightning-datatable data={account_details.data} columns={col} key-field="id"></lightning-datatable>
+
+    </lightning-card>
+
+
+    <template for:each={account_details.data} for:item="hh">
+
+    <p key={hh.id}>{hh.Name}</p>
+    <p key={hh.id}>{hh.Industry}</p>
+
+
+    </template>
+
+    
+</template>

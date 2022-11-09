@@ -1,0 +1,49 @@
+<apex:page controller="Eg1Greater12setget" >
+    <div class = "Myclass">
+        {!Msg}
+    </div>
+    <apex:form >
+       <apex:pageblock title="Cal greater Number">
+           
+           <apex:pageblocksection title="Please enter input" columns="1">
+               <apex:inputText label="Enter First Number" value="{!N1}" />
+               <apex:inputText label="Enter Second Number" value="{!N2}" />
+               <apex:inputText label="Enter Third Number" value="{!N3}" />
+               <apex:selectRadio label="Select your choice" value="{!Ch}">
+               <apex:selectOption itemLabel="Greater" itemValue="Gr"/>
+                <apex:selectOption itemLabel="Smaller" itemValue="Sm"/>
+                  </apex:selectRadio>
+               
+               <apex:commandButton value="Click here to calculate" action="{!Cal}"/>
+                                                                      
+               <apex:outputText label="The result is :" value="{!res}"/>               
+               
+           </apex:pageblocksection>
+        
+        
+        
+        
+        
+        
+        
+        </apex:pageblock>    
+    
+    
+    <style>
+        .MyClass
+        {
+          color:{!clr};
+          font-size:{!font};
+        
+        }
+        
+        
+        
+        </style>
+    
+    
+    
+    
+    
+    </apex:form>
+</apex:page>

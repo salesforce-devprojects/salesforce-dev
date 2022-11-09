@@ -1,0 +1,40 @@
+<aura:component controller = "Tr_Ligh_withpara" >
+    <aura:attribute name = "acl" type = "Account[]"/>
+    <aura:attribute name = "st" type = "String"/>
+    <aura:attribute name = "col" type = "List"/>
+    
+    <lightning:card title = "Account Search">
+        <lightning:layout>
+            <lightning:layoutItem size = "2">
+        <lightning:input label ="Enter the string" value = "{!v.st}"/>
+                </lightning:layoutItem>
+      </lightning:layout>
+        <lightning:dataTable keyField="id" data = "{!v.acl}" columns = "{!v.col}"/>
+    
+    <aura:set attribute="actions">
+        <lightning:button label = "Clickheretosearch" variant = "success" onclick = "{!c.search}"/>
+        
+        </aura:set>
+    
+    </lightning:card>
+    
+    <p>*********************************Lightning Itration*************************************</p>
+    
+    <lightning:layout multiplerows = "true">
+        
+        <aura:iteration items = "{!v.acl}" var = "a">
+         <lightning:layoutItem size = "2">
+             Name: {!a.Name} <br/>
+             Phone : {!a.Phone} <br/>
+             Rating : {!a.Rating}
+            
+            </lightning:layoutItem>
+            
+        </aura:iteration>
+    
+    
+    
+    </lightning:layout>
+    
+	
+</aura:component>

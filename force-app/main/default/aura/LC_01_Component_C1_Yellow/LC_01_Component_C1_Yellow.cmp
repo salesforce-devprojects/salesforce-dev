@@ -1,0 +1,12 @@
+<aura:component >
+    
+     <aura:handler name = "new" event = "c:LE_01_Component_diag" action = "{!c.handle}"/>
+    
+    <lightning:card title = "This is C1 Yellow handle the event">
+    
+        C1 Yellow will handle the event <b/>
+    
+    </lightning:card>
+	
+    <c:LC_01_Component_C11_Pink/>
+</aura:component>

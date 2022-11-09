@@ -1,0 +1,39 @@
+<apex:page sidebar="false" showHeader="false" controller="Praticsevf" >
+    
+   <apex:form >
+         <apex:pageBlock title="Account Retrival">
+              
+             <apex:image value="{!$Resource.Account}" style="max-width: 100%"/>
+             
+             
+             <apex:pageBlockSection title="Account Information">
+              <apex:inputText label="Enter Serach String" value="{!st}"/>
+                 
+                <apex:pageBlockTable value="{!aa}" var="b">
+                       <apex:column value="{!b.Name}"/>
+                    <apex:column value="{!b.Phone}"/>
+                 
+                 </apex:pageBlockTable>
+                 
+ <apex:commandButton value="Search" action="{!Main}"/>
+            
+             
+             
+             </apex:pageBlockSection>
+       
+          
+       
+       
+       
+       </apex:pageBlock>
+    
+    
+    
+    
+    
+    
+    
+    </apex:form>
+    
+    
+</apex:page>

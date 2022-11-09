@@ -1,0 +1,43 @@
+<apex:page >
+<apex:pageblock title="Customer Details">
+    <apex:pageblocksection >
+        <b>Customer Name</b><p/>
+        <b>Customer Phone Number</b>
+        <b>Customer Email</b>
+        <b>Customer Fax No</b>
+    </apex:pageblocksection>
+    
+    </apex:pageblock>
+    
+    <apex:pageblock title="Customer Journey Details">
+       <apex:pageblocksection >
+           <b>Customer Journey Date</b><p/>
+           <b>Customer From</b><p/>
+           <b>Customer TO</b><p/>
+           <b>Customer Mode of Payment</b>
+        </apex:pageblocksection>
+    </apex:pageblock>
+
+    <apex:pageblock title="Customer Family Details">
+    <apex:pageblocksection title="Customer Family">
+      <apex:pageblocksection >
+       <b>Customer Father Name</b><p/>
+       <b>Customer Mother Name</b><p/>
+       <b>Customer Permanent Address</b><p/>
+       <b>Customer Identity with Family</b>
+        </apex:pageblocksection>
+        </apex:pageblocksection>
+    </apex:pageblock>
+    
+    <apex:pageblock title="Customer Mode of Payment">
+       <apex:pageblocksection title="Credit Card Details">
+           <apex:pageblocksection >
+               <b>Customer Credit Card No</b><p/>
+               <b>Customer Credit Card type</b><p/>
+               <b>Customer GST Tax</b><p/>
+               <b>Customer International Payment</b>
+           </apex:pageblocksection>
+        </apex:pageblocksection>
+    </apex:pageblock>
+
+</apex:page>

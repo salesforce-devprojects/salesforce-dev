@@ -1,0 +1,36 @@
+<aura:component controller = "SecondMethod_Para" >
+    
+    <aura:attribute name = "acc" type ="Account" default = "{sObjectType :'Account'}"/>
+    <aura:attribute name = "cc" type ="Contact" default = "{sObjectType :'Contact'}"/>
+    <aura:attribute name = "ll" type ="Lead" default = "{sObjectType :'Lead'}"/>
+    <aura:attribute name = "opp" type ="Opportunity" default = "{sObjectType :'Opportunity'}"/>
+    
+    
+    <lightning:card title = "Account+Contact+Lead+Opportunity creation using Second Method">
+    
+    
+        <lightning:input label = "Enter Account Name" value ="{!v.acc.Name}"/>
+        <lightning:input label = "Enter Account Annual Rev" value ="{!v.acc.AnnualRevenue}"/>
+        <lightning:input label = "Enter Contact Name" value ="{!v.cc.LastName}" />
+        <lightning:input label = "Enter Lead Name"    value = "{!v.ll.Name}"/>
+        <lightning:input label = "Enter Lead Company" value ="{!v.ll.Company}"/>
+        <lightning:input label = "Enter Opportunity Name" value = "{!v.opp.Name}"/>
+        <lightning:input label = "Enter Opportunity Closedate"  value = "{!v.opp.CloseDate}"/>
+        <lightning:input label = "Enter Opportunity Stage" value = "{!v.opp.Stage}"/>
+        <aura:set attribute = "actions">
+        
+        
+            <lightning:button label = "Click here to save" onclick = "{!c.Clc}"/>
+            
+        
+        </aura:set>
+        
+    
+    
+    
+    
+    
+    </lightning:card>
+   
+	
+</aura:component>

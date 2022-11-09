@@ -1,0 +1,26 @@
+<apex:page >
+    <style>
+        #col1,#col2{width:49%;display:inline-block;}
+    </style>
+  
+    <apex:form >
+        <div id="col1">
+            <apex:image value="{!$Resource.salesforce11}" width="700px" height="300px" style="margin-right:500px;"/>
+            <apex:pageblock title="Welcome to Salesforce Login Page">
+                <apex:pageblockSection title="Fields" columns="1">
+                    <apex:inputText label="UserName" style="position: absolute"/>
+                    <apex:inputText label="Password" style="position: absolute"/>
+                </apex:pageblockSection>
+                <apex:pageblockButtons >
+                    <apex:commandButton value="Save"/>
+                </apex:pageblockButtons>
+            </apex:pageblock>
+        </div>
+        <div id="col2">
+            <apex:image value="{!$Resource.salesforce13}"  width="9000px"  style="margin-left: 300px ;max-width: 400; width: 400px;
+  height: 600px;
+  object-fit: cover"/>
+            
+        </div>       
+    </apex:form>
+</apex:page>

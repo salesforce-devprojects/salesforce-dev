@@ -1,0 +1,38 @@
+<aura:component controller = "SearchStringLigh" >
+    <aura:attribute name = "ccl" type = "Contact[]"/>
+    <aura:attribute name = "cl" type = "List"/>
+    <aura:attribute name = "st" type = "String"/>
+    
+    <lightning:card title = "Contact List">
+     
+    <aura:set attribute = "actions">
+        <lightning:button label = "Click here to  SearchString" onclick = "{!c.searchme}"/>
+        
+           <lightning:layout>
+            <lightning:layoutItem size = "7">
+              
+        
+          <lightning:input label = "Enter Name" value = "{!v.st}" type = "search"/>
+                </lightning:layoutItem>
+    </lightning:layout>
+        
+        </aura:set>
+    
+    
+    
+    
+    </lightning:card>
+    
+    
+    <lightning:card title = "SearchResult">
+        <lightning:dataTable keyField = "id" data = "{!v.ccl}" columns = "{!v.cl}">
+        
+        
+        
+        </lightning:dataTable>
+    
+    
+    
+    </lightning:card>
+	
+</aura:component>

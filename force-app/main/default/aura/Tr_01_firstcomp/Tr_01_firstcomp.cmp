@@ -1,0 +1,13 @@
+<aura:component >
+    <aura:attribute name = "msg" type = "string"/>
+    
+    <aura:handler name = "init" value = "{!this}" action = "{!c.clickme}"/>
+    
+    
+    <lightning:input label ="Enter the String" value = "{!v.msg}"/>
+    <lightning:button label = "Click here to save" onclick = "{!c.clickme}"/>
+    
+    
+    <b>This is first component {!v.msg}</b>
+	
+</aura:component>

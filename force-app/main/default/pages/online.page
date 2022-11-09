@@ -1,0 +1,16 @@
+<apex:page standardcontroller="Contact" showHeader="false" sidebar="false">
+    <style>
+        body {
+            background-image: url("http://www.w3schools.com/cssref/img_tree.gif");
+            background-repeat:repeat;
+        }
+        input[type="text"] {
+            background: transparent;
+            border:1px solid #000;
+        }        
+    </style>
+    <apex:form >
+        <apex:inputField value="{!contact.FirstName}"/>
+        <apex:inputField value="{!contact.LastName}"/>
+    </apex:form>
+</apex:page>

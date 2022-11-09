@@ -1,0 +1,23 @@
+<aura:component controller = "ThirdMethodWithList">
+    <aura:attribute name = "con" type = "Contact[]"/>
+    <aura:attribute name = "clm" type = "List"/>
+    
+    
+    <lightning:dataTable key = "id" data = "{!v.con}" columns = "{!v.clm}"/>
+    
+    <aura:handler name = "init" value = "{!this}" action = "{!c.loadme}"/>
+    
+    
+    
+    
+    <lightning:card title = "Contact creation with list">
+    
+       
+    
+    
+    
+    
+    
+    </lightning:card>
+	
+</aura:component>

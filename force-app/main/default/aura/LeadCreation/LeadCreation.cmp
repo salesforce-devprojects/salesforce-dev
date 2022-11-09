@@ -1,0 +1,28 @@
+<aura:component >
+   
+    <aura:attribute name = "Oname" type = "String"/>
+    <aura:attribute name = "Ocld" type = "Date"/>
+    <aura:attribute name = "Ost"  type = "String"/>    
+    <lightning:card title = "Opportunity Creation" iconName = "action:new_opportunity">
+        
+        <lightning:input label = "Opportuntiy Name" value = "{!v.Oname}"/>
+        <lightning:input label = "Opportunity Closedate" value = "{!v.Ocld}"/>
+        <lightning:input label = "Opportuntity Stage" value = "{!v.Ost}"/>
+        
+        
+     <aura:set attribute  = "footer">
+         
+         <lightning:buttonGroup>
+         <lightning:button label = "Save" onclick = "{!c.clickme}"/>
+         <lightning:button label = "Clear" onclick = "{!c.clear}"/>
+        
+        </lightning:buttonGroup>
+        </aura:set>
+    
+    
+    
+    
+    
+    </lightning:card>
+	
+</aura:component>

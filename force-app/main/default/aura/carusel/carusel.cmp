@@ -1,0 +1,27 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<lightning:card>
+    
+      <lightning:carousel>
+         <lightning:carouselImage
+            src="{!$Resource.car1}"
+            header="Company logo"
+            description="Company logo uploaded as a static resource"
+            alternativeText="Company logo">
+        </lightning:carouselImage>
+        <lightning:carouselImage
+            src="{!$Resource.car2}"
+            header="Fantastic product 1"
+            description="Fantastic product image in a zip file"
+            alternativeText="Fantastic product 1">
+        </lightning:carouselImage>
+        <lightning:carouselImage
+            src="{!$Resource.car3}"
+            header="Fantastic product 2"
+            description="Fantastic product image in a zip file"
+            alternativeText="Fantastic product 2">
+        </lightning:carouselImage>
+       </lightning:carousel>
+    
+    
+    </lightning:card>
+</aura:component>

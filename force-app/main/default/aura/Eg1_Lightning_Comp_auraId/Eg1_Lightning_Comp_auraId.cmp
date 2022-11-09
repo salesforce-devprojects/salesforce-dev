@@ -1,0 +1,32 @@
+<aura:component >
+    <div class="red">
+    
+    
+    
+   
+    <lightning:card title = "This is cal program without attribute">
+        
+        <lightning:input label = "Enter First Number" aura:id = "inp1"/>
+        <lightning:input label = "Enter Second Number" aura:id = "inp2"/>
+        <lightning:input label = "Enter third Number"  aura:id = "inp3"/>
+
+        <lightning:input label = "Result" aura:id = "res"/>
+    
+    
+    <aura:set attribute = "actions">
+        <lightning:buttonGroup>
+        <lightning:button label = "Click me" variant = "Success" onclick="{!c.click}"/>
+        <lightning:button label = "Clear" variant = "Destructive" onclick="{!c.clear}"/>  
+            
+</lightning:buttonGroup>
+        
+        
+        
+        
+        </aura:set>
+    
+    
+    </lightning:card>
+    </div>
+	
+</aura:component>

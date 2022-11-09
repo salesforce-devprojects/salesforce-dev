@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name = "childtoparent" type = "String"/>
+    <aura:registerEvent name = "simpleevent" type = "c:childtoparent"/>
+    
+    <lightning:input label = "enter some text" type = "search" value = "{!v.childtoparent}"/>
+    <aura:set attribute = "actions">
+     
+        <lightning:button label = "clickhere" value = "{!c.click}"/>
+    </aura:set>
+              
+              
+</aura:component>

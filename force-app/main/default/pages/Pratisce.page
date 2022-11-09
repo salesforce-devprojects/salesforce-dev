@@ -1,0 +1,28 @@
+<apex:page standardController="Account">
+    <apex:form >
+    
+        <apex:pageblock title="Account Form">
+               <apex:pageblocksection title="Account creation form">
+                   <apex:inputfield label="Enter Account Name" value="{!Account.Name}"/>
+                       <apex:inputfield label="Enter Account Name" value="{!Account.Phone}"/>
+                       <apex:inputfield label="Enter Account Name" value="{!Account.AnnualRevenue}"/>
+                      
+                       
+                   
+                   
+                   
+                  
+            
+            
+            
+            </apex:pageblocksection>
+        
+        
+        
+        </apex:pageblock>
+    
+    
+    
+    
+    </apex:form>
+</apex:page>

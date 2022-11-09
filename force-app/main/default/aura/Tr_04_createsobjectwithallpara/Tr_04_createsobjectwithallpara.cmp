@@ -1,0 +1,33 @@
+<aura:component controller = "TR_04_Createsobject_withallpara" >
+    <aura:attribute name = "accname" type ="String"/>
+    <aura:attribute name ="accphone" type = "String"/>
+    <aura:attribute name = "accrating" type = "String"/>
+     <aura:attribute name = "accannu" type = "Integer"/>
+    
+    
+    <lightning:card title ="Account creation by using all paramameteres" iconName ="utility:apex_plugin">
+    
+        <lightning:layout>
+            <lightning:layoutItem size = "5">
+        <lightning:input label ="Account Name" value = "{!v.accname}"/>
+        <lightning:input label ="Account Phone" value = "{!v.accphone}"/>
+        <lightning:input label ="Account Rating" value = "{!v.accrating}"/>
+        <lightning:input label ="Account AnnualRevenu" value = "{!v.accannu}"/>
+        
+         </lightning:layoutItem>
+    </lightning:layout>
+        
+        <aura:set attribute ="actions">
+            <lightning:buttonGroup>
+        
+            <lightning:button label = "Clickheretosave" variant = "Brand" onclick = "{!c.save}"/>
+            <lightning:button label = "Clear"           variant = "Destructive" onclick = "{!c.clear}"/>
+        
+        </lightning:buttonGroup>
+        </aura:set>
+    
+    
+    
+    </lightning:card>
+	
+</aura:component>

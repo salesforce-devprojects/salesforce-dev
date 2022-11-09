@@ -1,0 +1,105 @@
+<apex:page sidebar="false" showHeader="false" standardController="Account">
+    
+    <apex:tabpanel >
+        <apex:tab label="Accounts Tab" title="This will display all the account related records">
+       
+    <apex:pageblock title="Accounts">
+        
+        <apex:pageblocksection title="Myaccounts" columns="1">
+            <apex:outputField value="{!Account.Name}"/>
+            <apex:outputField value="{!Account.Phone}"/>
+            <apex:outputField value="{!Account.Rating}"/>
+            <apex:outputField value="{!Account.Industry}"/>
+            <apex:outputField value="{!Account.Description}"/>
+            <apex:outputField value="{!Account.Sic}"/>
+        
+        </apex:pageblocksection>
+    
+       <apex:pageblock title="Our Own table with colounms">
+              <apex:pageblocksection title="Own Table">
+           
+                 <apex:pageblocktable value="{!Account.Contacts}" var="cc">
+                     <apex:column value="{!cc.LastName}"/>
+                     <apex:column value="{!cc.Phone}"/>
+                   
+                  </apex:pageblocktable>
+                  
+                  <apex:pageblocktable value="{!Account.Cases}" var="ca">
+                        <apex:column value="{!ca.Status}"/>
+                        <apex:column value="{!ca.Origin}"/>
+                       
+                     
+                         </apex:pageblocktable>
+                  
+                   <apex:pageblocktable value="{!Account.Opportunities}" var="op">
+                        <apex:column value="{!op.Name}"/>
+                       <apex:column value="{!op.StageName}"/>
+                       
+                       
+                         </apex:pageblocktable>
+                  
+           
+           
+           </apex:pageblocksection>
+        
+        
+        
+        
+        </apex:pageblock>
+    
+    
+    
+    </apex:pageblock>
+             </apex:tab>
+        
+        </apex:tabpanel>
+    
+    
+    <apex:tabpanel >
+        
+        <apex:tab label="Account Creation Tab" title="This tab will create accounts">
+            
+            <apex:pageblock title="Related Accounts List">
+          <apex:pageblocksection title="Relate To Account" columns="1">
+              <apex:relatedList list="Contacts"/>
+                  <apex:relatedList list="Cases"/>
+                  <apex:relatedList list="Opportunities"/>
+       
+        </apex:pageblocksection>
+        </apex:pageblock>
+            <apex:form >
+             <apex:inputField value="{!Account.Name}"/>
+             <apex:inputField value="{!Account.Rating}"/>
+             <apex:inputField value="{!Account.Phone}"/>
+                <apex:inputField value="{!Account.AccountNumber}"/>
+                <apex:inputField value="{!Account.Type}"/>
+                <apex:inputField value="{!Account.Sic}"/>
+             
+                
+            
+                
+                
+            
+            
+            
+           
+            </apex:form>
+            
+            
+            
+            
+            
+            
+        </apex:tab>
+    
+    
+    
+    
+    
+    </apex:tabpanel>
+    
+    
+    
+    
+    
+</apex:page>

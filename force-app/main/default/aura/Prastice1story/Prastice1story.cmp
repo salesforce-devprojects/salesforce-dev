@@ -1,0 +1,19 @@
+<aura:component >
+    <lightning:button label = "Follow" iconName ="utility:add"/>
+    
+    <lightning:buttonGroup>
+    
+    <lightning:button label = "New Case"/>
+    <lightning:button label = "New Note"/>
+    <lightning:button label = "Submit for Approval"/>
+
+    <lightning:buttonMenu>
+        <lightning:menuItem label ="New Opportunity" value="opp"/>
+         <lightning:menuItem label ="New Lead" value="ll"/>
+         <lightning:menuItem label ="New Contact" value="cc"/>
+         <lightning:menuItem label ="New Account" value="ac"/>
+         <lightning:menuItem label ="New Task" value="tt"/>
+    
+    </lightning:buttonMenu>
+	</lightning:buttonGroup>
+</aura:component>

@@ -1,0 +1,14 @@
+<apex:page controller="Maimessagethrou_vf">
+    <apex:form >
+    <apex:pageblock title="Email">
+        
+                
+        
+        </apex:pageblock>
+    
+    
+    
+    
+    
+    </apex:form>
+</apex:page>

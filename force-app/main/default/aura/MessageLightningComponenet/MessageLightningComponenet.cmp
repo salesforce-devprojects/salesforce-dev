@@ -1,0 +1,36 @@
+<aura:component controller = "MailingMessage">
+
+    <aura:attribute name = "Snto" type ="String"/>
+       <aura:attribute name = "Sub" type ="String"/>
+       <aura:attribute name = "Eb" type ="String"/>
+    
+    
+    
+    <lightning:card title = "Sending an Email">
+    
+        <lightning:input label = "Enter Sendto Address" value = "{!v.Sendto}"/>
+        <lightning:input label = "Enter Subject " value = "{!v.Sub}"/>
+        <lightning:input label = "Enter email Body " value  = "{!v.Eb}"/>
+        
+        
+        <aura:set attribute  = "actions">
+            
+            <lightning:button label = "Clickhere to Save" variant = "Success" value = "{!c.Clickme}"/>
+            
+        
+        
+        
+        
+        
+        </aura:set>
+        
+    
+    
+    
+    
+    
+    
+    </lightning:card>
+     
+	
+</aura:component>

@@ -1,0 +1,27 @@
+<aura:component >
+    <aura:attribute name = "empname" type ="String" default ="Sreeram"/>
+    <aura:attribute name = "empage" type ="Integer"/>
+    
+    <lightning:card title = "Attribute">
+        Employee name : {!v.empname}<p/>
+        Employee Age  : {!v.empage}<p/>
+       
+        
+        <aura:set attribute = "actions">
+       
+        
+        <lightning:buttonGroup>
+            <lightning:button label = "Submit"  onclick ="{!c.sub}" variant ="Success"/>
+            <lightning:button label = "Submit" variant = "Success" onclick ="{!c.cl}"/>
+        </lightning:buttonGroup>
+      
+     
+        
+    
+    
+    
+    </aura:set>
+    </lightning:card>
+    
+	
+</aura:component>

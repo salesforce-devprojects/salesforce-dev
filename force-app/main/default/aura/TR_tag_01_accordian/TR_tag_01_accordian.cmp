@@ -1,0 +1,132 @@
+<aura:component >
+    
+    <lightning:accordion activeSectionName = "B">
+    
+        <lightning:accordionSection name = "A" label = "Accordion title A" >
+        
+         <b>This is content of section A</b>
+        
+        </lightning:accordionSection>
+    
+        
+        <lightning:accordionSection name = "B" label = "Accordion title B" >
+        
+         <b>This is content of section B</b>
+        
+        </lightning:accordionSection>
+    
+    </lightning:accordion>
+    
+    
+    
+    <p>**************Lightningaccordian intiallization with multiple active sections**************</p>
+    
+    <aura:attribute name ="activesections" type = "List"/>
+    
+    <lightning:accordion allowMultipleSectionsOpen = "true" activeSectionName = "{!v.activesections}">
+    
+     <lightning:accordionSection name = "A" label ="AccordianSection A">
+        
+        <b>This is A section</b>
+        
+        
+        </lightning:accordionSection>
+       
+        
+        <lightning:accordionSection name = "B" label = "Accordion Section B">
+        
+        <b>This is B Section</b>
+        
+        
+        </lightning:accordionSection>
+    
+         <lightning:accordionSection name = "C" label = "Accordion Section C">
+        
+         <b>This is C section</b>
+        
+        </lightning:accordionSection>
+    
+    
+    </lightning:accordion>
+    
+    
+    
+    <p>*****Handling the sections toogle event*********</p>
+    
+    <aura:attribute name = "activesectionmessage" type = "String"/>    
+    <p> {!v.activesectionmessage}</p>
+    <lightning:accordion allowMultipleSectionsOpen = "true" activeSectionName = "A" onsectiontoggle = "{!c.toggle}">
+    
+      <lightning:accordionSection name = "A" label = "Accordion A">
+        
+         <p>This is Accordion Section toggle</p>
+        
+        
+        
+        </lightning:accordionSection>
+        
+        
+        <lightning:accordionSection name = "B" label = "Accordion B">
+        
+          <p>This is Accordion Section toogle</p>
+        
+        
+        </lightning:accordionSection>
+        
+        <lightning:accordionSection name ="C" label = "Accordion C">
+        
+         <p>This is Accordion Section toogle</p>
+        
+        </lightning:accordionSection>
+    
+    
+    
+    </lightning:accordion>
+    
+    
+    
+    <p>*****Handle Sections by using Button*****</p>
+    
+    
+ 
+    
+    <aura:attribute name = "section" type = "String"/>
+   
+    <lightning:card>
+    <aura:set attribute="actions">
+        <lightning:button label ="Expand Section A" onclick = "{!c.handle}"/>
+        <lightning:button label = "Expand Section B" onclick = "{!c.handle}"/>
+        <lightning:button label = "Expand Section C" onclick = "{!c.handle}"/>
+    
+    </aura:set>
+    </lightning:card>
+    
+    <lightning:accordion activeSectionName = "{!v.section}" allowMultipleSectionsOpen = "true" onsectiontoggle = "{!c.handle}">
+    
+      <lightning:accordionSection  name = "A" label = "Accordion A">
+        
+         <b>This is Handling with Button A</b>
+        
+        
+        </lightning:accordionSection>
+        
+        <lightning:accordionSection name = "B" label = "Accordion B">
+          <b>This is Handling with Button B</b>
+        
+        
+        </lightning:accordionSection>
+        
+        <lightning:accordionSection name = "C" label = "Accordion C">
+        
+          <b>This is Handling with button C</b>
+        </lightning:accordionSection>
+    
+    
+    </lightning:accordion>
+    <lightning:card>
+    <aura:set attribute = "actions">
+    <lightning:avatar src = "{!$Resource.sal}"  alternativeText="Ss"/>
+        </aura:set>
+    </lightning:card>
+	
+</aura:component>

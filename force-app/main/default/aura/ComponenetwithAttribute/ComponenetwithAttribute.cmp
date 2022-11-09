@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:attribute name = "num1" type = "Integer"/>
+    <aura:attribute name = "num2" type = "Integer"/>
+    <aura:attribute name = "num3" type = "Integer"/>
+    
+    
+    
+	
+</aura:component>

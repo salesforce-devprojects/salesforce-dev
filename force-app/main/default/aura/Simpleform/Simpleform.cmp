@@ -1,0 +1,38 @@
+<aura:component controller = "Allform_Lightning" >
+
+    
+    
+    
+  
+    <aura:attribute name ="accname" type = "String"/>
+    <aura:attribute name = "anualal" type = "Integer"/>
+    <aura:attribute name = "CampNa" type = "String"/>
+    <aura:attribute name = "CampTy" type = "String"/>
+   
+    
+    <lightning:card title ="Account+Opportunity form" iconName="Standard Icons:account_info">
+      
+        <lightning:input label = "Enter accountName" value ="{!v.accname}"/>
+        <lightning:input label = "Enter account Annual Revenue" value ="{!v.anualal}"/>
+        <lightning:input label = "Enter Campagin Name" value ="{!v.CampNa}"/>
+        <lightning:input label = "Enter Campagin Type" value ="{!v.CampTy}"/>
+        
+
+        
+        
+        <aura:set attribute = "actions">
+            
+            <lightning:button label = "Savemee" onclick= "{!c.clickme}"/>
+            
+            
+            
+        </aura:set>
+        
+        
+        
+    
+        
+       
+    </lightning:card>
+         
+</aura:component>

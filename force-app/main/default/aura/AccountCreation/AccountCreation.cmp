@@ -1,0 +1,30 @@
+<aura:component controller = "TR_04_Createsobject_withallpara" implements = "force:appHostable" >
+    <aura:attribute name = "accname" type ="String" default = "{sObject:Type{'Account'}"/>
+    <aura:attribute name = "accph" type ="String"/>
+     <aura:attribute name = "accal" type ="Integer"/>
+     <aura:attribute name = "accra" type ="String"/>
+    
+   
+    <lightning:layout>
+        <lightning:layoutItem size = "7">
+    
+    <lightning:card title = "Account Creation"  iconName = "standard:account">
+    <lightning:input label = "Enter Account Name" value = "{!v.accname}" />
+     <lightning:input label = "Enter Account Phone" value = "{!v.accph}"/>
+     <lightning:input label = "Enter Account AnnualRe" value = "{!v.accal}"/>
+     <lightning:input label = "Enter Account Rating" value = "{!v.accra}"/>
+        <aura:set attribute = "actions">
+    
+        <lightning:button label = "Save" onclick = "{!c.clickme}" variant ="Success"/>
+            <lightning:button label = "Clear" onclick = "{!c.clear}" variant = "Destructive"/>
+  
+   </aura:set>
+    </lightning:card>
+            </lightning:layoutItem>
+   </lightning:layout>
+    
+     
+    
+    
+	
+</aura:component>

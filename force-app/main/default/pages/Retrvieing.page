@@ -1,0 +1,38 @@
+<apex:page controller="Retreivingvf">
+    <apex:form >
+         
+    <apex:pageBlock title="Contact Details">
+        
+       <apex:pageBlockSection title="Lead Search" columns="1">
+     
+           <apex:inputText label="Enter input String " value="{!st}"/>
+           
+           
+          <apex:commandButton value="Search" action="{!Main}"/>
+           
+           <apex:pageblockTable value="{!cc}" var="c">
+                
+               <apex:column value="{!c.Name}"/>
+               <apex:column value="{!c.Type}"/>
+               <apex:column value="{!c.Amount}"/>
+               <apex:column headerValue="Select">
+                   <apex:inputcheckbox />
+               </apex:column>
+
+           
+           
+           
+           
+           </apex:pageblockTable>
+        
+        
+        </apex:pageBlockSection>
+        
+        
+        
+        </apex:pageBlock>
+    
+    
+    
+    </apex:form>
+</apex:page>

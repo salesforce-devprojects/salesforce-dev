@@ -1,0 +1,17 @@
+<aura:component >
+    
+    <aura:attribute name = "s1" type = "String" access= "public" default = "Sreeram"/>
+    <aura:attribute name = "s2"  type = "String" access = "public" default = "Sachin"/>
+	
+    <lightning:card title = "New Names">
+  
+    <div class = "red">
+    Welcome :{!v.s1} <p/>
+    Hello   :{!v.s2} <br/>
+</div>  
+        <aura:set attribute = "actions">
+ <lightning:button label = "Click here" variant = "success" onclick="{!c.action}"/>
+</aura:set>
+    </lightning:card>
+    
+</aura:component>

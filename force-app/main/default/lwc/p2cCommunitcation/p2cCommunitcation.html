@@ -1,0 +1,12 @@
+<template>
+    <lightning-card>
+  <div class="slds-var-m-around_medium">
+    <c-child-alert-component message="Hurayy we got some error" num="23" is-valid="true"></c-child-alert-component>
+</div>
+<lightning-input label="Enter the percentage" type="number" onkeyup={changeHandler} value={progressvalue}></lightning-input>
+  <c-percentage-component percentage={progressvalue}></c-percentage-component>
+
+  <lightning-button label="Reset the slider" variant="brand" onclick={handleClick}></lightning-button>
+  <c-child-reset-component></c-child-reset-component>
+    </lightning-card>
+</template>

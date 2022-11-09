@@ -1,0 +1,57 @@
+<apex:page sidebar="false" showHeader="false" standardController="Account">
+    <apex:pageblock title="Account Fields">
+  
+
+        <apex:pageblocksection title="All Account Fields" columns="1">
+       <apex:outputField value="{!Account.Name}"/>
+       <apex:outputField value="{!Account.Phone}"/>
+       <apex:outputField value="{!Account.Fax}"/>
+       <apex:outputField value="{!Account.AnnualRevenue}"/>
+       <apex:outputfield value="{!Account.Rating}"/>
+            
+       
+        </apex:pageblocksection>   
+    
+    </apex:pageblock>
+    
+    
+<apex:pageblock title="All Account related Contacts,Opp,Cases,Patners">
+    <apex:pageblocksection title="Account Related Objects" columns="1">
+   
+        <apex:relatedList list="Contacts"/>
+        <apex:relatedList list="Cases"/>
+        <apex:relatedList list="Opportunities"/>
+    
+    
+    </apex:pageblocksection>   
+    </apex:pageblock>
+
+
+<apex:pageblock title="List View By default">
+    <apex:pageblocksection title="List View Of Accounts" columns="1">
+        <apex:listViews type="Account"/>
+    </apex:pageblocksection>
+    
+    
+    
+    <apex:pageblocksection title="Our Own Page Block Table">
+
+        <apex:pageBlockTable value="{!Account.Contacts}" var="cc">
+            <apex:column value="{!cc.FirstName}"/>
+             <apex:column value="{!cc.LastName}"/>
+             <apex:column value="{!cc.Phone}"/>
+            
+            <apex:pageBlockTable value="{!Account.Opportunities}" var="oo">
+                
+            <apex:column value="{!oo.Name}"/>
+                
+           
+        </apex:pageBlockTable>
+        </apex:pageBlockTable>
+            
+        </apex:pageBlocksection>
+    
+
+    </apex:pageblock>      
+
+</apex:page>

@@ -1,0 +1,87 @@
+<apex:page controller="Eg2Inheritance_Multilevel_Case" >
+    <apex:form >
+      <apex:pageblock title="Account details">
+          <apex:pageBlockSection title="Please enter Account details" columns="1">
+               <apex:inputText label="Account Name" value="{!Nm}"/>
+              <apex:inputText label="Account Industry "  value="{!Indus}"/>
+                <apex:inputText label="Account Rating "  value="{!Ra}"/>
+                <apex:inputText label="Annual Revenue "  value="{!AR}"/>
+              
+              <apex:outputText label="The result is: " value="{!res}"/>
+              
+              <apex:commandButton title="Click here to Save" action="{!Acc}"/>
+          
+          
+          </apex:pageBlockSection>
+       </apex:pageblock>
+    
+    
+        
+        
+        <apex:pageblock title="Contact details">
+          <apex:pageBlockSection title="Please enter Contact details" columns="1">
+               <apex:inputText label="Contact Name" value="{!Na}"/>
+              <apex:inputText label="Contact Phone "  value="{!Ph}"/>
+                              
+
+              
+              <apex:commandButton title="Click here to Save" action="{!Con}"/>
+                <apex:outputText label="The result is: " value="{!Re}"/>
+          
+          
+          </apex:pageBlockSection>
+       </apex:pageblock>
+    
+    
+        
+        
+        
+        
+        <apex:pageblock title="Lead details">
+          <apex:pageBlockSection title="Please enter Lead details" columns="1">
+              
+              <apex:inputText label="Lead Name" value="{!Nam}"/>
+              <apex:inputText label="Lead Company "  value="{!CC}"/>
+                <apex:inputText label="LeadSource "  value="{!SS}"/>
+             
+              <apex:commandButton title="Click here to Save" action="{!Le}"/>
+                   <apex:outputText label="The result is: " value="{!res}"/>
+          
+          
+          
+          
+          
+          
+          </apex:pageBlockSection>
+       </apex:pageblock>
+    
+    
+        
+        
+        
+        
+        
+        <apex:pageblock title="Task details">
+          <apex:pageBlockSection title="Please enter Task details" columns="1">
+          
+           <apex:inputText label="Task  Subject" value="{!Su}"/>
+              <apex:inputText label="Task Status "  value="{!St}"/>
+                <apex:inputText label="Task Priority "  value="{!Pt}"/>
+             
+                             <apex:commandButton title="Click here to Save" action="{!TT}"/>
+                   <apex:outputText label="The result is: " value="{!resu}"/>
+          
+          
+          
+          
+          </apex:pageBlockSection>
+       </apex:pageblock>
+    
+    
+    
+    
+    
+    
+    
+    </apex:form>
+</apex:page>

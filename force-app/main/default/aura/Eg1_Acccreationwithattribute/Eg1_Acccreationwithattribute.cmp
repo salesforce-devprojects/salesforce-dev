@@ -1,0 +1,28 @@
+<aura:component controller = 'AccountCreationthroughLight' >
+    <aura:attribute name = "accname" type="String"/>
+    <aura:attribute name = "accPhone" type = "String"/>
+    <aura:attribute name = "accFax"  type = "String"/>
+    <aura:attribute name = "accInd"  type = "String"/>
+    <aura:attribute name = "annualr" type = "Integer"/>
+    
+    <lightning:card title = "Account Creation" iconName="utility:add">
+     
+        <lightning:input label = "Account Name" value="{!v.accname}"/>
+        <lightning:input label = "Account Phone" value="{!v.accPhone}"/>
+        <lightning:input label = "Account Fax" value="{!v.accFax}"/>
+        <lightning:input label = "Account Industry" value="{!v.accInd}"/>
+        <lightning:input label = "Annual Revenue"   value = "{!v.annualr}"/>
+        
+        <aura:set attribute = "actions">
+        
+            <lightning:button label="Save" onclick= "{!c.saveme}"/>
+        
+        </aura:set>
+    
+    
+    
+    
+    
+    </lightning:card>
+	
+</aura:component>

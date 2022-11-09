@@ -1,0 +1,19 @@
+<aura:component >
+    <aura:attribute name = "cacc" type = "Account" default = "{'sObjectType':'Account'}"/>
+
+    <aura:registerEvent name = "sona" type = "c:LE_02_CRE_DIS_THRO_EVENT"/>
+    
+    <lightning:card title = "Create Account">
+    
+        <lightning:input label = "Enter Account Name" value = "{!v.cacc.Name}"/>
+        <lightning:input label = "Enter Account Phone" value = "{!v.cacc.Phone}"/>
+        <lightning:input label = "Enter Account Industry" value = "{!v.cacc.Industry}"/>
+        
+        
+ 
+      <lightning:button label  = "Submit" onclick = "{!c.subme}"/>
+      
+    
+    </lightning:card>
+	
+</aura:component>

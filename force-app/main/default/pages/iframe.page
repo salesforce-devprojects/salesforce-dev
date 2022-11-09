@@ -1,0 +1,3 @@
+<apex:page >
+    <apex:iframe src="https://www.irctc.co.in"/>
+</apex:page>

@@ -1,0 +1,12 @@
+<aura:component controller = "Tr_Ligh_withoutpara" >
+    <aura:attribute name = "ccl" type = "Contact[]"/>
+    <aura:attribute name = "col" type = "List"/>
+    
+    <aura:handler name = "init" value = "{!this}" action = "{!c.load}"/>
+    <lightning:card title = "List of all contacts">
+    
+        <lightning:dataTable keyField = "id" data = "{!v.ccl}" columns = "{!v.col}"/>
+    
+    </lightning:card>
+	
+</aura:component>

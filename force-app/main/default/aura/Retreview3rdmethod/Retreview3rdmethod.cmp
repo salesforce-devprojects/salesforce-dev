@@ -1,0 +1,16 @@
+<aura:component controller = "RetreviewingRecords_Ligh">
+    <aura:attribute name = "con" type = "Contact[]"/>
+    <aura:attribute name = "col" type ="List"/>
+    
+    <aura:handler name = "init" value ="{!this}" action ="{!c.loadme}"/>
+    
+    <lightning:card title = "Retrieving all contacts">
+     
+        <lightning:dataTable keyField = "id" data ="{!v.con}" columns = "{!v.col}"/>
+        
+    
+    
+    
+    </lightning:card>
+	
+</aura:component>

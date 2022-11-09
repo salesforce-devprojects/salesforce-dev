@@ -1,0 +1,29 @@
+<aura:component controller ="Tr_Ligh_withonepara">
+    <aura:attribute name = "acc" type = "Account" default = "{sobjectType:'Account'}"/>
+    
+    <lightning:card title = "Account creation using one parametre" iconName = "standard:account">
+        
+    
+        <lightning:layout>
+            <lightning:layoutItem size = "5">
+        <lightning:input label = "Enter Account Name" value = "{!v.acc.Name}"/>
+        <lightning:input label = "Enter Account Phone" value = "{!v.acc.Phone}"/>
+        <lightning:input label  = "Enter Account Rating" value = "{!v.acc.Rating}"/>
+        <lightning:input label  = "Enter Account AnnualRev" value = "{!v.acc.AnnualRevenue}"/>
+                </lightning:layoutItem>
+        </lightning:layout>
+        
+        <aura:set attribute = "actions">
+        
+            <lightning:buttonGroup>
+            <lightning:button label = "Save" variant = "Success" onclick = "{!c.save}"/>
+            <lightning:button label = "Clear" variant = "Brand" onclick = "{!c.clear}"/>
+</lightning:buttonGroup>        
+        </aura:set>
+    
+    
+    
+    </lightning:card>
+    
+	
+</aura:component>

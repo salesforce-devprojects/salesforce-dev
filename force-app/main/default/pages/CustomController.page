@@ -1,0 +1,35 @@
+<apex:page controller="CustomApex" sidebar="false" showHeader="false">
+    <apex:form >
+          <apex:pageblock title="Custom Controller">
+                 <apex:pageblocksection title="Please fill details" columns="1">
+                     <apex:inputfield value="{!ll.Name}"/>
+                      <apex:inputfield value="{!ll.Phone}"/>
+                      <apex:inputfield value="{!ll.Fax}"/>
+                      <apex:inputfield value="{!ll.Rating}"/>
+                     <apex:inputfield value="{!ll.AnnualRevenue}"/>
+                     
+                     
+                     <apex:commandButton value="Click here to save" action="{!save}"/>
+                
+              
+              
+              
+              
+              
+              
+              </apex:pageblocksection>
+                          
+        
+        
+        
+        </apex:pageblock>
+    
+    
+    
+    
+    
+    
+    
+    
+    </apex:form>
+</apex:page>

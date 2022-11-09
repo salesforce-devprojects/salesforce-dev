@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="This is the first Event" >
+   <aura:attribute name = "message" type = "String"/>
+
+</aura:event>

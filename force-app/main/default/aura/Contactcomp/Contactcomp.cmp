@@ -1,0 +1,11 @@
+<aura:component controller = "ContactLightCreation" > 
+    <aura:attribute name = "cname" type="string"/> 
+    <aura:attribute name = "cph" type="string"/>
+    <lightning:card title = "Contact creation">
+        <lightning:input label ="Contact Name" value ="{!v.cname}"/>
+        <lightning:input label ="Contact Phone" value ="{!v.cph}"/>
+        <aura:set attribute = "title">
+            <lightning:button label ="Save" onclick ="{!c.touchme}" class = "new"/>  
+        </aura:set>
+    </lightning:card>
+</aura:component>

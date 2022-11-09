@@ -1,0 +1,32 @@
+<apex:page sidebar="false" showHeader="false" standardController="calculator__c">
+    <apex:image value="{!$Resource.CAL2}" height="200" width=""/>
+    
+    h1{
+      left-margin = 300px;
+    
+      }
+
+        <apex:form >
+     
+            <apex:pageblock title="Calculator"> 
+   
+       <apex:pageblocksection title="Fields" columns="1">
+
+         
+       <apex:inputField value="{!calculator__c.Enter_First_Number__c}"/>
+       <apex:inputField value="{!calculator__c.Enter_Second_Number__c}"/>
+       <apex:inputField value="{!calculator__c.Enter_Third_Number__c}"/>
+           <apex:selectradio label="  " >
+               <apex:selectoption itemlabel="Greater" itemvalue="Greater" /> &nbsp; &nbsp;
+                   <apex:selectoption itemlabel="smaller" itemvalue="smaller" /> &nbsp;
+                </apex:selectradio>
+                <apex:commandButton value="Calculate" />
+           <apex:inputtext label="The Result is:"/>
+          
+           
+        </apex:pageblocksection>
+            </apex:pageblock>
+    </apex:form>
+
+    
+</apex:page>

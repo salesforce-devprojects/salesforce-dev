@@ -1,0 +1,37 @@
+<aura:component >
+    
+    <lightning:card>
+        <aura:set attribute ="title">
+        
+        <lightning:input label="EmployeefirstName" type="text"/>
+            <lightning:input label="EmployeeLastName" type="text"/>
+            <lightning:input label="EmployeePhone" type="text"/>
+            </aura:set>
+        
+        <lightning:buttonGroup>
+    
+    <lightning:button label = "Enter" iconName = "utility:forward" variant = "Success"/>
+    <lightning:button label = "Exit" iconName = "utility:close" variant = "destructive"/>
+   
+    </lightning:buttonGroup>
+       
+        
+        <aura:set attribute = "actions">
+        
+        <lightning:input label="Employee Department Name" type="text"/>
+            <lightning:input label="Employee Role" type="text"/>
+            <lightning:input label="Employee Salary" type="text"/>
+
+        
+       
+    <lightning:buttonGroup>
+    
+    <lightning:button label = "Clickhere" iconName = "utility:merge" variant = "Success"/>
+    <lightning:button label = "Tap Here" iconName = "utility:anywhere_alert" variant = "brand"/>
+   
+    </lightning:buttonGroup>
+             </aura:set>
+        </lightning:card>
+         
+	
+</aura:component>

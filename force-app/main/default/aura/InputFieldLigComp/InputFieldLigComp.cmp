@@ -1,0 +1,36 @@
+<aura:component >
+    <aura:attribute name = "num1" type = "Integer"/>
+     <aura:attribute name = "num2" type = "Integer"/>
+     <aura:attribute name = "num3" type = "Integer"/>
+     <aura:attribute name = "Result" type = "String"/>
+    <lightning:card title = "Calculating Greater Number amoung 3 Numbers" iconName ="utility:questions_and_answers">
+        <lightning:input label = "Enter First Number" value = "{!v.num1}"/>
+        <lightning:input label = "Enter Second Number" value = "{!v.num2}"/>
+        <lightning:input label = "Enter Third Number" value = "{!v.num3}"/>
+        
+        
+        <aura:set attribute ="actions">
+            
+            <lightning:buttonGroup>
+            
+        
+            <lightning:button label="CalMe" iconName ="utility:einstein" variant = "Success" onclick = "{!c.calculate}"/>
+            <lightning:button label="Clear" iconName ="utility:logout" variant = "destructive" onclick = "{!c.clear}"/>
+            
+        </lightning:buttonGroup>
+            
+            
+        </aura:set>
+    
+    
+    <p></p>
+        
+        <br/>
+        The Result of Greater Number is {!v.Result}
+   
+    
+    
+    </lightning:card>
+    
+	
+</aura:component>

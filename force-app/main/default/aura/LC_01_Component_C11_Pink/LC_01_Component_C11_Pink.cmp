@@ -1,0 +1,18 @@
+<aura:component >
+    
+    <aura:registerEvent name ="new" type="c:LE_01_Component_diag"/>
+    <aura:handler name = "new" event = "c:LE_01_Component_diag" action = "{!c.handle}"/>
+    <lightning:card title = "C11-PINK REGISTER AND FIRE">
+       
+      
+
+      
+     
+        <lightning:button label="Click here" onclick="{!c.clickme}"/>
+    
+    
+    
+    </lightning:card>
+	
+    <c:LC_01_Component_C111_Brown/>
+</aura:component>

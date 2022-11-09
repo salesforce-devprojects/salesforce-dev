@@ -1,0 +1,48 @@
+<apex:page standardController="Opportunity" sidebar="false" showHeader="false">
+    <apex:form >
+            <apex:pageblock title="Opportunity creation using Standard Controller">
+                      <apex:pageblocksection title="Enter Opportuntity Details" columns="1">
+                          <apex:inputfield value="{!Opportunity.Name}"/>
+                           <apex:inputfield value="{!Opportunity.LeadSource}"/>
+                            <apex:inputfield value="{!Opportunity.CloseDate}"/>
+                          <apex:inputfield value="{!Opportunity.StageName}"/>
+                          <apex:commandButton value="Click here to save" action="{!save}">
+                          
+                          
+                          
+                          </apex:commandButton>
+                          
+                        
+                
+                
+                
+                
+                
+                </apex:pageblocksection>
+                               
+        
+        
+        
+        
+        
+        
+        </apex:pageblock>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </apex:form>
+    
+    
+    
+    
+    
+    
+    
+    
+</apex:page>

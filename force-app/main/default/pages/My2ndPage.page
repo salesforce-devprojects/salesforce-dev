@@ -1,0 +1,41 @@
+<apex:page >
+<apex:pageBlock title="Customer Registration Details">
+   <apex:pageBlockSection >
+       <b>Customer Name</b><p/>
+       <b>Customer Email</b><p/>
+       <b>Customer Flight No</b><p/>
+       <b>Customer Address</b>
+    </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <apex:pageBlock title="Customer Details">
+        <apex:pageblocksection >
+            <b>Customer LastName</b><p/>
+            <b>Customer Personal Mobile Number</b><p/>
+            <b>Customer Adhar Card Number</b><p/>
+            <b>Customer Bank Acc Number</b>
+        </apex:pageblocksection>
+    </apex:pageBlock>
+    
+    <apex:pageBlock title="Customer Transcation Details">
+        <apex:pageBlockSection >
+            <b>Customer Credit Card number</b><p/>
+        <b>Customer Payment Date</b><p/>
+        <b>Customer GST FEE</b>
+        </apex:pageBlockSection>
+    </apex:pageBlock> 
+     <apex:pageBlock title="Customer Feedback">
+         <apex:pageBlockSection >
+             <b>Customer Rating</b><p/>
+             <b>Customer Feedback in Rich Text</b>
+             <b>Customer Overall Experience</b>
+         </apex:pageBlockSection>
+    </apex:pageBlock>
+     <apex:pageBlock title="Customer Journey Details">
+       <apex:pageBlockSection >
+           <b>Customer Flight Number</b><p/>
+           <b>Customer From to To </b><p/>
+           <b>Customer Journey Date</b>
+         </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

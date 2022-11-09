@@ -1,0 +1,47 @@
+<aura:component >
+   
+    <div class ="slds-p-left_x-large">
+     <p>This is second time pratcise with css</p>
+    <h1 class ="red">This is 3rd time pratisce</h1>
+    <b>This is 4th time pratisce</b>
+  
+    </div>
+	
+    <h1 class = "white">Here it is a seperate colour</h1>
+    
+    <lightning:card>
+        <aura:set attribute ="actions">
+   
+    <div>
+    <h1 class ="red">This is Red Tag</h1>
+    <h1 class ="yellow">This is Yellow tag</h1>
+    <h1 class = "green">This is Green tag</h1>
+    <h1 class = "blue">This is Blue tag</h1>
+    <h1 class = "orange">This is Orange tag</h1>
+    </div>
+            </aura:set>
+     </lightning:card>
+    
+    
+    
+    
+    <lightning:card title = "This is title">
+         <aura:set attribute ="title">
+        
+ <div>
+    <h1 class ="red">This is Red Tag</h1>
+    <h1 class ="yellow">This is Yellow tag</h1>
+    <h1 class = "green">This is Green tag</h1>
+    <h1 class = "blue">This is Blue tag</h1>
+    <h1 class = "orange">This is Orange tag</h1>
+    </div>        
+        
+        
+        </aura:set>
+        
+    
+    
+    
+    </lightning:card>
+        
+</aura:component>

@@ -1,0 +1,36 @@
+<apex:page sidebar="false" showHeader="false" standardController="Account">
+      <apex:form >
+    <apex:pageblock title="Account Form">
+   
+       <apex:pageblocksection title="All Account Fields" columns="1">
+         
+       <apex:inputField value="{!Account.Name}"/>
+       <apex:inputField value="{!Account.Phone}"/>
+       <apex:inputField value="{!Account.Fax}"/>
+       <apex:inputField value="{!Account.AnnualRevenue}"/>
+       <apex:inputfield value="{!Account.Rating}"/>
+       <apex:inputfield value="{!Account.Description}"/>
+                
+        
+           <apex:inputSecret label="Enter Password" title="This will ask to enter pass" value="{!Account.Description}"/>
+           <apex:inputtext label="Enter Text" title="This will ask to enter text" value="{!Account.Description}"/>
+        
+               
+           <apex:inputcheckbox label="Checkboxes"/>
+           <apex:selectOption itemLabel="Name" title="Name" value="{!Account.Name}"/>
+               
+    
+           
+           
+         
+           
+           
+           
+           <apex:commandButton value=" Save" title="This will create a new record" action="{!save}"/>
+          <apex:commandButton value=" Cancel" title="This will cancel a record" action="{!Cancel}"/>
+           
+        </apex:pageblocksection>   
+            </apex:pageblock>
+           </apex:form>
+    
+</apex:page>

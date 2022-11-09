@@ -1,0 +1,5 @@
+<aura:component >
+    <aura:attribute name = "catch" type = "string"/>
+    <aura:handler name = "handle" event = "c:childtoparent" action = "{!c.handler}"/>
+	
+</aura:component>
